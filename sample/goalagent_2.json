@@ -69,6 +69,6 @@
             }
         ]
     },
-    "action": "http://restfest.org/event/payment",
+    "action": "http://cheaptickets.com/book",
     "next": "http://hypergoal.org/goalagent/attend_event"
 }
