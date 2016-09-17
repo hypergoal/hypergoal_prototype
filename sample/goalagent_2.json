@@ -1,0 +1,74 @@
+{
+    "goal": {
+        "@context": "http://hypergoal.org/contexts/goal.jsonld",
+        "parameters": {
+            "@context": "http://hypergoal.org/contexts/attend_event/params.jsonld",
+            "name" : "REST FEST 2016",
+            "event": "https://restfest.org/event"
+        },
+        "constraints": {
+            "airfare" : {
+                "@context": "http://hypergoal.org/contexts/attend_event/constraints/airfare.jsonld",
+                "cost": {
+                    "currency": "USD",
+                    "value": "< 700"
+                },
+                "brands" : ["Delta", "American", "United"]
+            },
+            "hotel": {
+                "@context": "http://hypergoal.org/contexts/attend_event/constraints/hotel.jsonld",
+                "distance" : {
+                    "units": "miles", 
+                    "value": "< 15"                
+                },
+                "cost": {
+                    "currency": "USD",
+                    "value": "< 1000"
+                },
+                "brands": ["Marriot", "Holiday Inn"]
+            }
+        }
+    },
+    "data": {
+        "@context": "http://hypergoal.org/contexts/data.jsonld", 
+        "event" : {
+            "@context": "http://hypergoal.org/contexts/attend_event/event.jsonld",
+            "name": "REST FEST", 
+            "date": {
+                "start": "09/15/2017", 
+                "end": "09/17/2017"
+            },
+            "location": {
+                "address": "101 N Main Street",
+                "country": "USA", 
+                "city": "Greenville",
+                "state": "SC"
+            },
+            "cost": {
+                "currency": "USD",
+                "value":150
+            },
+            "booking": "https://restfest.org/booking",
+        },
+        "ticket" : {
+            "@context": "http://hypergoal.org/contexts/event/ticket",
+            "booking": "http://restfest.org/booking/A12BB93C-4614-4C24-A370-BE022BEE0B9C",
+
+        }
+    },
+    "history": {
+        "@context": "http://hypergoal.org/contexts/history.jsonld",
+        "items": [
+            {
+                "action": "http://restfest.org/attend",
+                "archive": "http://restfest/org/archive/25CACE5-B77D-462E-9856-CBAEA0C1D83F"
+            },
+            {
+                "action": "http://restfest.org/payment",
+                "archive": "http://restfest.org/archive/AC9EFA9B-A2E2-4D3F-B56B-53A6EEEB0F3D"
+            }
+        ]
+    },
+    "action": "http://restfest.org/event/payment",
+    "next": "http://hypergoal.org/goalagent/attend_event"
+}
