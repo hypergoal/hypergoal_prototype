@@ -1,4 +1,5 @@
 {
+    "@context": "http://hypergoal.org/contexts/attend_event/event.jsonld",
     "name": "REST FEST", 
     "date": {
         "start": "09/15/2017", 
