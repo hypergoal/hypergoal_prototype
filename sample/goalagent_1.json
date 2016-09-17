@@ -54,10 +54,10 @@
     "history": {
         "@context": "http://hypergoal.org/contexts/history.jsonld",
         "items": [
-        {
-            "action": "http://restfest.org/attend",
-            "archive": "http://restfest/org/archive/25CACE5-B77D-462E-9856-CBAEA0C1D83F"
-        }
+            {
+                "action": "http://restfest.org/attend",
+                "archive": "http://restfest/org/archive/25CACE5-B77D-462E-9856-CBAEA0C1D83F"
+            }
         ]
     },
     "action": "http://restfest.org/event/payment",
