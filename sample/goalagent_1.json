@@ -1,5 +1,4 @@
 {
-    "@context": "http://hypergoal.org/contexts/attend_event/book_event.jsonld",
     "goal": {
         "@context": "http://hypergoal.org/contexts/goal.jsonld",
         "parameters": {
@@ -30,7 +29,8 @@
             }
         }
     },
-    "state": { 
+    "data": {
+        "@context": "http://hypergoal.org/contexts/data.jsonld",
         "event" : {
             "@context": "http://hypergoal.org/contexts/attend_event/event.jsonld",
             "name": "REST FEST", 
@@ -50,6 +50,15 @@
             },
             "booking": "https://restfest.org/booking",
         }
+    },
+    "history": {
+        "@context": "http://hypergoal.org/contexts/history.jsonld",
+        "items": [
+        {
+            "action": "http://restfest.org/attend",
+            "archive": "http://restfest/org/archive/25CACE5-B77D-462E-9856-CBAEA0C1D83F"
+        }
+        ]
     },
     "action": "http://restfest.org/event/payment",
     "next": "http://hypergoal.org/goalagent/attend_event"
