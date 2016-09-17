@@ -1,29 +1,30 @@
 {
-    "goal": {
-        "type": "attend_event",
-        "parameters": {
-            "name" : "REST FEST 2016",
-            "event": "https://restfest.org/event"
-        },
-        "constraints": {
-            "airfare" : {
-                "cost": {
-                    "currency": "USD",
-                    "value": "< 700"
-                },
-                "brands" : ["Delta", "American", "United"]
+    "@context": "http://hypergoal.org/contexts/goal.jsonld",
+    "parameters": {
+        "@context": "http://hypergoal.org/contexts/attend_event/params.jsonld",
+        "name" : "REST FEST 2016",
+        "event": "https://restfest.org/event"
+    },
+    "constraints": {
+        "airfare" : {
+            "@context": "http://hypergoal.org/contexts/attend_event/constraints/airfare.jsonld",
+            "cost": {
+                "currency": "USD",
+                "value": "< 700"
             },
-            "hotel": {
-                "distance" : {
-                    "units": "miles", 
-                    "value": "< 15"                
-                },
-                "cost": {
-                    "currency": "USD",
-                    "value": "< 1000"
-                },
-                "brands": ["Marriot", "Holiday Inn"]
-            }
+            "brands" : ["Delta", "American", "United"]
+        },
+        "hotel": {
+            "@context": "http://hypergoal.org/contexts/attend_event/constraints/hotel.jsonld",
+            "distance" : {
+                "units": "miles", 
+                "value": "< 15"                
+            },
+            "cost": {
+                "currency": "USD",
+                "value": "< 1000"
+            },
+            "brands": ["Marriot", "Holiday Inn"]
         }
     }
 }
