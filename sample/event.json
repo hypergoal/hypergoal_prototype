@@ -13,7 +13,7 @@
     },
     "cost": {
         "currency": "USD",
-        "150"
+        "value":150
     },
     "booking": "https://restfest.org/booking",
 }
