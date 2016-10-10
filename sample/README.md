@@ -3,6 +3,9 @@
 ## Overview
 The samples here represent an event booking use case. The client in this case is trying to book to attend RESTFest. 
 
+## Usage of JSON-LD
+JSON-LD is used within to attach semantic meaning to each of the elements. The JSON-LD docs themselves do not exist yet and the references are purely for illustration.
+
 ## Files
 
 * goal.json - The goal the client is trying to achieve. This is sent to a goal agent who responsibility is to guide the client. 
