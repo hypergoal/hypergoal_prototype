@@ -7,4 +7,4 @@ The samples here represent an event booking use case. The client in this case is
 
 * goal.json - The goal the client is trying to achieve. This is sent to a goal agent who responsibility is to guide the client. 
 * event.json - Descriptor for the event. This is the information that would be hosted at `https://restfest.org/event`
-* goalagent1.json, goalagent2.json - A document will capture the entire "journey" toward the goal and passed back and forth between the client and goal agent. This document contains all the state for the interactions. These 2 documents are examples at different points during the journey.
+* goalagent1.json, goalagent2.json - Examples of payloads at different stages through the workflow. A document will capture all the state for the "journey" toward the goal. It will be passed back and forth between the client and goal agent and continually appended / updated.
